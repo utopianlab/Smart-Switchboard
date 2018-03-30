@@ -1,31 +1,64 @@
-# Smart-Switchboard
 
-It's a Touch Smart Switchboard with Alexa control for home automation.
+CONTENTS OF THIS FILE
+=======================
+	* Introduction
+	* Version
+	* Integration details
+	* Driver files information
+	* Supported sensor interface
+	* Copyright
 
-ESP32: The ESP32 microcontroller offers a lot of features that can be applied to a diverse set of applications. However we found it suitable for making a smart switchboard as we can use both the WiFi and Bluetooth in it for communicating to the cloud and at the same time communicating to other devices such as Motion sensor/Door Sensor.
+INTRODUCTION
+===============
+	- This package contains the Bosch Sensortec MEMS humidity sensor driver(sensor API)
+	- The sensor driver package includes bme280.h, bme280.c and bme280_support.c files
+	
+VERSION
+=========
+	- Version of bme280 sensor driver is:
+		* bme280.c - V2.0.5
+		* bme280.h - V2.0.5
+		* bme280_support.c - V1.0.6
 
-The Proposed features are:
+INTEGRATION DETAILS
+=====================
+	- Integrate bme280.h and bme280.c file in to your project.
+	- The bme280_support.c file contains only examples for API use cases, so it is not required to integrate into project.
 
- -A Touch Smart Switchboard for controlling all the Lights/fans
- 
- -An inbuilt Temperature sensor for monitoring the room temperature
- 
- -An inbuilt ambient light sensor for turning the lights on at dark hours.
- 
- -A battery powered Motion/Door sensor to send data to ESP32 to control lights automatically.
- 
- -Using Alexa Voice control to control all the lights and fans.
- 
- ESP-IDF was used to program the ESP32. BME280 sensor was used to measure the temperature, pressure and humditity of the room. A custom made relay module was used to control electronic appliance.
+DRIVER FILES INFORMATION
+===========================
+	bme280.h
+	-----------
+		* This header file has the register address definition, constant definitions, data type definition and supported sensor driver calls declarations.
 
-Future Work planned:
+	 bme280.c
+	------------
+		* This file contains the implementation for the sensor driver APIs.
 
-- Dim all the lights and fan using the temperature and ambient light sensor
+	 bme280_support.c
+	----------------------
+		* This file shall be used as an user guidance, here you can find samples of
+    			* Initialize the sensor with I2C/SPI communication
+        				- Add your code to the SPI and/or I2C bus read and bus write functions.
+            					- Return value can be chosen by yourself
+           					- API just passes that value to your application code
+        				- Add your code to the delay function
+        				- Change I2C address accordingly in bme280.h
+   			* Power mode configuration of the sensor
+   			* Get and set functions usage
+			* Reading the sensor read out data
 
-- Create an Android App to control the lights using mobile
+SUPPORTED SENSOR INTERFACE
+====================================
+	- This humidity sensor driver supports SPI and I2C interfaces
 
-- Optimize the touch sensor code for better operation
 
-- Energy analytics for the user
+COPYRIGHT
+===========
+	- Copyright (C) 2013 - 2016 Bosch Sensortec GmbH
 
-- Use Predictive models for personalizing the home for the user
+
+	
+
+
+	
