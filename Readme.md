@@ -16,6 +16,8 @@ https://youtu.be/7jChybAB1uc
 
 The above video gives a short demo of the Smart switchboard with Alexa. Further Touch control will be added shortly
 
+The code can be compiled by following the ESP-IDF framework method and can be executed in any of the ESP32 boards.
+
 Although the hardware for the touch functionality and the battery powered motion/door sensor is ready. Software integrations are taking time and will be updated shortly.
 
 Future Work to be done:
