@@ -15,3 +15,17 @@ The Proposed features are:
  -A battery powered Motion/Door sensor to send data to ESP32 to control lights automatically.
  
  -Using Alexa Voice control to control all the lights and fans.
+ 
+ ESP-IDF was used to program the ESP32. BME280 sensor was used to measure the temperature, pressure and humditity of the room. A custom made relay module was used to control electronic appliance.
+
+Future Work planned:
+
+- Dim all the lights and fan using the temperature and ambient light sensor
+
+- Create an Android App to control the lights using mobile
+
+- Optimize the touch sensor code for better operation
+
+- Energy analytics for the user
+
+- Use Predictive models for personalizing the home for the user
