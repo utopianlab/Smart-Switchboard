@@ -6,8 +6,8 @@ ESP32: The ESP32 microcontroller offers a lot of features that can be applied t
 
 The Proposed features are:
 
-A Touch Smart Switchboard for controlling all the Lights/fans
-An inbuilt Temperature sensor for monitoring the room temperature
-An inbuilt ambient light sensor for turning the lights on at dark hours.
-A battery powered Motion/Door sensor to send data to ESP32 to control lights automatically.
-Using Alexa Voice control to control all the lights and fans.
+ -A Touch Smart Switchboard for controlling all the Lights/fans
+ -An inbuilt Temperature sensor for monitoring the room temperature
+ -An inbuilt ambient light sensor for turning the lights on at dark hours.
+ -A battery powered Motion/Door sensor to send data to ESP32 to control lights automatically.
+ -Using Alexa Voice control to control all the lights and fans.
